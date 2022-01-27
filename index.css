@@ -13,20 +13,33 @@
         
     #wrapper{
       /* max-width: 80%; */
-      border-radius: 5px;
-      margin: 5% 5%;
+     
+      margin: 15vh 50vh;
       background-color: rgb(92, 103, 125);
+      clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
+
+      border-radius: 5px;
     }
 
+    .flex-container {
+      display: flex;
+    }
 
     /* profile-container */
-    #profile-container {
-      display: inline-block;
+    .flex-child  {
+      flex: 1;
+      padding-top: 5vh;
+      padding-left: 5vh;
     }
+
     /* profile-picture */
     img#profile-picture {
     border-radius: 5px;
-    margin: 5%;
+    padding: 5vh;
+    }
+
+    .flex-child.main-text {
+      text-decoration: red;
     }
 
 
@@ -39,7 +52,7 @@
     }
     /* align linkedin-icon */
     img#linkedin-icon {
-      padding: 1%;
+      padding: 0.5%;
       position: relative;
       top: 10px;
     }
